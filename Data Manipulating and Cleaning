@@ -1,29 +1,71 @@
 # Module: Data Manipulation and Cleaning
 
 ## 📌 Assignment Description
-Brief explanation of what this assignment is about.
+This assignment focuses on preparing and cleaning a dataset by handling missing values, performing imputation, and detecting outliers.
 
 ## 📊 Dataset Description
-- Source of data
-- Number of rows/columns
-- Key variables
+- File: DataSet_No_Details.csv
+- Contains medical and hormonal variables
+- Includes missing values and multiple numeric indicators
 
 ## ⚙️ Tools & Environment
-- R version: 4.x.x
-- Libraries used: dplyr, tidyr, etc.
+- R version: (add your version, e.g., 4.3.1)
+- Libraries:
+  - dplyr
+  - skimr
+  - visdat
+  - naniar
+  - mice
+  - ggplot2
+  - tidyr
 
 ## 🔄 Procedure
-1. Data loading
-2. Data cleaning (handling missing values, duplicates)
-3. Transformation
-4. Exporting cleaned data
+
+### 1. Data Loading
+- Dataset imported using `read.csv()`
+- Structure examined using `str()` and `skim()`
+
+### 2. Data Cleaning
+- Removed irrelevant columns:
+  - h_index_34, h_index_56, hormone10_1, hormone10_2
+  - an_index_23, outcome, factor variables
+
+### 3. Missing Data Analysis
+- Calculated missing values:
+  - Total NA count
+  - NA per column
+  - Percentage missing
+- Filtered variables:
+  - ≤35% missing
+  - >35% missing
+- Visualized missingness:
+  - vis_miss()
+  - gg_miss_var()
+
+### 4. Missing Data Handling
+- Removed high-missing variables (e.g., hormone9–14)
+- Performed imputation using:
+  - Random Forest (rf)
+  - Predictive Mean Matching (pmm)
+
+### 5. Data Imputation
+- Used `mice()` package
+- Generated complete dataset
+- Compared distributions using density plots
+
+### 6. Outlier Detection
+- Used boxplots:
+  - For selected lipid variables
+  - For entire dataset
 
 ## 📈 Outputs
 - Cleaned dataset
-- Summary statistics
-- Any intermediate results
+- Imputed dataset
+- Missing data visualizations
+- Density plots (original vs imputed)
+- Boxplots for outlier detection
 
 ## 📁 Files
 - `data/` → raw dataset
-- `code/` → scripts used
+- `code/` → R script
 - `output/` → results and graphs
