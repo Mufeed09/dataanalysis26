@@ -1,17 +1,20 @@
 # dataanalysis26
-## 📌 Overview
-This repository contains coursework assignments for the Data Analysis 2026 course.
 
-## 📂 Structure
-Each folder represents a module:
+## 📌 Overview
+This repository contains coursework for Data Analysis 2026.
+
+The project focuses on:
+- Data cleaning
+- Missing data analysis
+- Data imputation
+- Outlier detection
+
+## 📂 Modules
 - Data Manipulation and Cleaning
-- Data Visualization
-- Statistical Analysis
 
 ## 🛠 Tools Used
-- R (version 4.x.x)
-- RStudio
-- Libraries: dplyr, ggplot2, tidyr, etc.
+- R
+- Libraries: dplyr, skimr, visdat, naniar, mice, ggplot2, tidyr
 
 ## Author
 - AGBOOLA MUFEED KOREDE
