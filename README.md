@@ -13,4 +13,5 @@ Each folder represents a module:
 - RStudio
 - Libraries: dplyr, ggplot2, tidyr, etc.
 
+## Author
 - AGBOOLA MUFEED KOREDE
