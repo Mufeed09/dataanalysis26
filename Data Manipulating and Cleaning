@@ -1,1 +1,29 @@
+# Module: Data Manipulation and Cleaning
 
+## 📌 Assignment Description
+Brief explanation of what this assignment is about.
+
+## 📊 Dataset Description
+- Source of data
+- Number of rows/columns
+- Key variables
+
+## ⚙️ Tools & Environment
+- R version: 4.x.x
+- Libraries used: dplyr, tidyr, etc.
+
+## 🔄 Procedure
+1. Data loading
+2. Data cleaning (handling missing values, duplicates)
+3. Transformation
+4. Exporting cleaned data
+
+## 📈 Outputs
+- Cleaned dataset
+- Summary statistics
+- Any intermediate results
+
+## 📁 Files
+- `data/` → raw dataset
+- `code/` → scripts used
+- `output/` → results and graphs
